@@ -19,8 +19,6 @@ spec:
         - name: content
           mountPath: /usr/share/nginx/html
           readOnly: true
-      - name: podinfo 
-        image: ghcr.io/stefanprodan/charts/podinfo:placeholder
       volumes:
       - name: content
         configMap:
