@@ -19,8 +19,6 @@ spec:
         - mountPath: /usr/share/nginx/html
           name: content
           readOnly: true
-      - image: ghcr.io/stefanprodan/charts/podinfo:placeholder
-        name: podinfo
       volumes:
       - configMap:
           name: kargo-demo-content

@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kargo-podinfo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kargo-podinfo
+  template:
+    metadata:
+      labels:
+        app: kargo-podinfo
+    spec:
+      containers:
+      - image: ghcr.io/stefanprodan/charts/podinfo:placeholder
+        name: podinfo
