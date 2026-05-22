@@ -13,3 +13,10 @@ patches:
     - op: replace
       path: /spec/ports/0/nodePort
       value: 32082
+- target:
+    kind: Service
+    name: kargo-podinfo
+  patch: |-
+    - op: replace
+      path: /spec/ports/0/nodePort
+      value: 32092
