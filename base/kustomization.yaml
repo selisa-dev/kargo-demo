@@ -4,4 +4,5 @@ kind: Kustomization
 resources:
 - deploy.yaml
 - service.yaml
+- deploy-podinfo.yaml
 - service-podinfo.yaml
